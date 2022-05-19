@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu Responsivo</title>
+</head>
+<body>
+    <nav>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="spotify.svg">
+            </a>
+        </div>
+
+        <div class="menu-icon" onclick="abrirMenu()">
+            <img src="menu.png">
+        </div>
+
+        <ul>
+            <li>
+                <a href="#">
+                    Premiun
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Ajuda
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Baixar
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Inscrever-se
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Entrar
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        var menu = document.querySelector('nav ul');
+        var menuIcon = document.querySelector('.menu-icon');
+
+        function abrirMenu(){
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
